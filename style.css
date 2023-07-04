@@ -109,13 +109,38 @@
     text-decoration: underline;
   }
 
-/*---------MEDIA QUERIES---------*/
+  /* Ocultamos por defecto el menú hamburguesa*/
+label {
+  display: none;
+}
+
+/* Ocultamos también el input para hacer click en el menú hamburgesa sin que se vea el checkbox*/
+input {
+  display: none;
+}
+
+/* Cuando tenemos como máximo 600px de ancho en pantalla, hacemos que aparezca el menú hamburguesa y ocultamos el menú de links*/
 
   @media screen and (max-width: 1000px) {
+    label {
+      display: flex;
+      font-size: 30px;
+    }
+
     .menuTotal {
-    background: blue;
+      display: none;
     }
-    }
+    /*Cuando el checkbox esté checked, lo que vamos a mostrar es el ul que por defecto está oculto. Este checkbox lo estamos pulsando a través de su label que es el icono de la hamburguesa*/
+  #hamburger:checked ~ ul {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
   /*  --------------- COLOCACION IMAGEN CABECERA (SECTION) ------------- */
   
