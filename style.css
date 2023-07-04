@@ -109,6 +109,14 @@
     text-decoration: underline;
   }
 
+/*---------MEDIA QUERIES---------*/
+
+  @media screen and (max-width: 1000px) {
+    .menuTotal {
+    background: blue;
+    }
+    }
+
   /*  --------------- COLOCACION IMAGEN CABECERA (SECTION) ------------- */
   
   .darkSun {
@@ -188,7 +196,7 @@
     width: auto;
     object-fit: cover;
   }
-  
+ 
   /*----------------VIDEO-----------------*/
   
   button {
