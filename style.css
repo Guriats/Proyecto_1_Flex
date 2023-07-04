@@ -47,32 +47,19 @@
   /* ----------------------NAVBAR 2------------------- */
   /*preguntar*/
   
-  .menutotal {
-    display: grid;
-    grid-template-columns: 100px 1fr 100px;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    width: auto;
-    padding: 0 80px;
+ .nav{
+  display: flex;
+  height: 10vh;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-  }
-  
-  .lupa{
-    margin: 0px 0px 0px 50px;
-  }
-  
-  .menu > ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 15px;
-    text-transform: uppercase;
-    gap: 20px;
-  }
-  
-  .dayseeker {
+ /* .dayseeker {
     font-size: 40px;
     padding: 30px;
     margin: auto;
@@ -105,7 +92,7 @@
   
   .video:hover {
     text-decoration: underline;
-  }
+  }*/
   
   .lupa img {
     height: 20px;
@@ -113,10 +100,7 @@
     filter: invert();
   }
   
-  .cesta {
-    display: flex;
-    justify-content: right;
-  }
+
   
   .cesta img {
     height: 20px;
