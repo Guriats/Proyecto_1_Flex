@@ -125,9 +125,10 @@ input {
     label {
       display: flex;
       font-size: 30px;
+  
     }
 
-    .menuTotal {
+    .menuTotal{
       display: none;
     }
     /*Cuando el checkbox esté checked, lo que vamos a mostrar es el ul que por defecto está oculto. Este checkbox lo estamos pulsando a través de su label que es el icono de la hamburguesa*/
